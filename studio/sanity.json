@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "project": {
+    "name": "Provider Directory",
+    "title": "Independent Physician Management"
+  },
+  "api": {
+    "projectId": "9psw7v6p",
+    "dataset": "development"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/google-maps-input",
+    "media"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}

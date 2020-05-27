@@ -13,7 +13,8 @@ import specialty from './documents/specialty'
 import body from './objects/bodyPortableText'
 import locationImage from './objects/locationImage'
 import profileImage from './objects/profileImage'
-import services from './objects/services'
+import locationServices from './objects/locationServices'
+import providerServices from './objects/providerServices'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,6 +30,7 @@ export default createSchema({
     body,
     locationImage,
     profileImage,
-    services
+    locationServices,
+    providerServices
   ])
 })

@@ -1,6 +1,6 @@
 export default {
     title: 'Service(s)',
-    name: 'services',
+    name: 'locationServices',
     type: 'object',
     fieldsets: [
         {
@@ -10,16 +10,16 @@ export default {
     ],
     fields: [
         {
-            title: 'Scheduling ID',
-            name: 'dSID',
+            title: 'Location Scheduling ID',
+            name: 'lSID',
             type: 'string',
             fieldset: 'docasap'
         },
         {
             title: 'Tracking ID',
-            name: 'dTID',
+            name: 'lTID',
             type: 'string',
             fieldset: 'docasap'
-        },
+        }
     ],
   }

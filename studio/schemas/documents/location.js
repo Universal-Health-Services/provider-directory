@@ -123,9 +123,9 @@ export default {
             type: 'geopoint'
         },
         {
-            title: 'Scheduling ID',
-            name: 'locationSID',
-            type: 'string'
+            name: 'services',
+            description: `Any services associated with this location.`,
+            type: 'locationServices'
         },
     ],
     orderings: [

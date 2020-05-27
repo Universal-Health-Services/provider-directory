@@ -161,7 +161,7 @@ export default {
         {
             name: 'services',
             description: `Any services associated with this provider.`,
-            type: 'services',
+            type: 'providerServices',
         },
     ],
     orderings: [

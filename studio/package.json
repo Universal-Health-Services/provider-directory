@@ -18,7 +18,7 @@
     "@sanity/base": "^1.149.19",
     "@sanity/components": "^1.149.19",
     "@sanity/core": "^1.149.19",
-    "@sanity/cli":"^v1.149.19",
+    "@sanity/cli": "^v1.149.19",
     "@sanity/default-layout": "^1.149.19",
     "@sanity/default-login": "^1.149.18",
     "@sanity/desk-tool": "^1.149.19",

@@ -8,6 +8,7 @@ import location from './documents/location'
 import provider from './documents/provider'
 import role from './documents/role'
 import specialty from './documents/specialty'
+import vertical from './documents/vertical'
 
 // Object types
 import body from './objects/bodyPortableText'
@@ -31,6 +32,7 @@ export default createSchema({
     locationImage,
     profileImage,
     locationServices,
-    providerServices
+    providerServices,
+    vertical
   ])
 })

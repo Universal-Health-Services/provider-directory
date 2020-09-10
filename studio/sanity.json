@@ -5,8 +5,8 @@
     "title": "Independent Physician Management"
   },
   "api": {
-    "projectId": "9psw7v6p",
-    "dataset": "development"
+    "projectId": "89obqmi5",
+    "dataset": "providers"
   },
   "plugins": [
     "@sanity/base",

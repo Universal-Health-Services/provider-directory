@@ -160,8 +160,13 @@ export default {
         },
         {
             name: 'services',
+            title: 'Service(s)',
             description: `Any services associated with this provider.`,
-            type: 'services',
+            type: 'array',
+            of: [
+                {type: 'docasapProvider'},
+                {type: 'kyruusProvider'},
+            ],
         },
     ],
     orderings: [

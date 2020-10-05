@@ -102,12 +102,8 @@ export default {
                 options: {
                     list: [
                         {title: 'Doctor of Medicine', value: 'MD'},
-                        {title: 'Doctor of Osteopathic Medicine', value: 'DO'},
-                        {title: 'Physician Assistant-Certified' , value: 'PA-C'},
-                        {title: 'Registered Nurse', value: 'RN'},
                         {title: 'Nurse Practitioner', value: 'NP'},
-                        {title: 'Family Nurse Practitioner', value: 'FRN'},
-                        {title: 'Registered Dietitian', value:'RD'}
+                        {title: 'Registered Nurse', value: 'RN'}
                     ],
                     layout: 'dropdown'
                 }
@@ -163,22 +159,14 @@ export default {
             validation: Rule => Rule.error(`You have to define at least one location for a provider.`).required(),
         },
         {
-            name: 'vertical',
-            title: 'Healthcare Vertical(s)',
-            type: 'array',
-            of: [{
-                weak: true,
-                type: 'reference',
-                to: {
-                    type: 'vertical'
-                }
-            }],
-            validation: Rule => Rule.error(`You have to define the healthcare vertical for this provider.`).required(),
-        },
-        {
             name: 'services',
+            title: 'Service(s)',
             description: `Any services associated with this provider.`,
-            type: 'providerServices',
+            type: 'array',
+            of: [
+                {type: 'docasapProvider'},
+                {type: 'kyruusProvider'},
+            ],
         },
     ],
     orderings: [

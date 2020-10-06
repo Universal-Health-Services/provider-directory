@@ -122,11 +122,6 @@ export default {
             title: 'Geographic Point',
             type: 'geopoint'
         },
-        {
-            name: 'services',
-            description: `Any services associated with this location.`,
-            type: 'locationServices'
-        },
     ],
     orderings: [
         {

@@ -122,6 +122,20 @@ export default {
             title: 'Geographic Point',
             type: 'geopoint'
         },
+        {
+            name: 'hours',
+            title: 'Hour(s)',
+            description: `This location's hours of operation.`,
+            type: 'array',
+            of: [{ type: 'locationHour' }],
+        },
+        {
+            name: 'services',
+            title: 'Service(s)',
+            description: `Any services associated with this location.`,
+            type: 'array',
+            of: [{ type: 'docasapLocation' }],
+        },
     ],
     orderings: [
         {

@@ -98,14 +98,10 @@ export default {
             description: `The provider's credentials for the role.`,
             type: 'array',
             of:[{
-                type: 'string',
-                options: {
-                    list: [
-                        {title: 'Doctor of Medicine', value: 'MD'},
-                        {title: 'Nurse Practitioner', value: 'NP'},
-                        {title: 'Registered Nurse', value: 'RN'}
-                    ],
-                    layout: 'dropdown'
+                weak: true,
+                type: 'reference',
+                to: {
+                    type: 'credential'
                 }
             }],
             fieldset: 'providerProfile'
@@ -215,13 +211,12 @@ export default {
         select: {
             f: 'nameFirst',
             l: 'nameLast',
-            c: 'credentials',
             r: 'role.slug.current',
             s: 'slug.current',
             i: 'profileImage',
         },
-        prepare({ f, l, c, r, s, i }) {
-            const t=`${f} ${l}, ${c}`
+        prepare({ f, l, r, s, i }) {
+            const t=`${f} ${l}`
             const st=`slug: ./${r}/${s}/`
             return {
                 media: i,

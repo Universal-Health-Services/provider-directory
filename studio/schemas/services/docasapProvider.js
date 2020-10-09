@@ -9,6 +9,11 @@ export default {
             name: 'pSID',
             type: 'string'
         },
+        {
+            title: 'Tracking Code',
+            name: 'pTC',
+            type: 'slug'
+        }
     ],
     preview: {
         prepare() {

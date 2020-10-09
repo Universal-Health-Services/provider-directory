@@ -10,6 +10,8 @@ export default {
             type: 'string',
             options: {
                 list: [
+                    { title: 'Monday – Friday', value: 'Monday – Friday' },
+                    { title: 'Monday – Thursday', value: 'Monday – Thursday' },
                     { title: 'Sunday', value: 'Sunday' },
                     { title: 'Monday', value: 'Monday' },
                     { title: 'Tuesday', value: 'Tuesday' },
@@ -39,7 +41,7 @@ export default {
             c: 'close',
         },
         prepare({ d, o, c }) {
-            const t=`${d}`+` ${o} - ${c}`
+            const t=`${d}:`+` ${o} - ${c}`
             return {
                 title: t
             }

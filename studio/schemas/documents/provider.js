@@ -155,6 +155,12 @@ export default {
             validation: Rule => Rule.error(`You have to define at least one location for a provider.`).required(),
         },
         {
+            name: 'hideScheduleBtn',
+            title: 'Hide Schedule Button',
+            description: `Hide the schedule button, true equals hidden.`,
+            type: 'boolean'
+        },
+        {
             name: 'services',
             title: 'Service(s)',
             description: `Any services associated with this provider.`,
